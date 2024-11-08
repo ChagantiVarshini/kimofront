@@ -26,3 +26,7 @@ app.use('/api/orders', orderRoutes); // All `/api/orders` requests will be handl
 app.listen(5001, () => {
   console.log('Server is running on http://localhost:5001');
 });
+const port = process.env.PORT || 5000; // Default to 5000 for local development
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
