@@ -1,0 +1,101 @@
+.place-order-container {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff; /* White background for a boxy look */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for a refined box effect */
+  border: 1px solid #e4d1d8; /* Light border to enhance box outline */
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #8e2b47; /* Deep, rich pink color for the heading */
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: 'Georgia', serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between input fields */
+}
+
+form div {
+  margin-bottom: 20px; /* More space between the label and input fields */
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8e2b47;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #e4d1d8; /* Subtle, soft pink border */
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #8e2b47; /* Deep pink for focus state */
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #8e2b47; /* Deep pink button */
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #a33f5d; /* Slightly lighter pink on hover */
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  color: #8e2b47;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+}
+
+.cart-items {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e4d1d8;
+}
+
+.cart-items h3 {
+  color: #8e2b47;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.cart-items div {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e4d1d8;
+}
+
+.cart-items div:last-child {
+  border-bottom: none;
+}

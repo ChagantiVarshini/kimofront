@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Categories Section Styling */
+.categories {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.category-list {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: nowrap;
+}
+
+.category-item {
+    width: 180px;
+    text-align: center;
+    margin: 15px;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-item img:hover {
+    transform: scale(1.05);
+}
+
+.category-item p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    
+}
+/* Remove underline for links within the category item */
+.category-item p a,
+.category-item a {
+    text-decoration: none !important; /* Forcefully removes any underline */
+    color: inherit; /* Inherit color from parent to ensure consistency */
+}
+
+/* Optional: Ensure any hover state doesn't add underline */
+.category-item p a:hover,
+.category-item a:hover {
+    text-decoration: none !important; /* Remove underline on hover */
+}
+
+
+/* Featured Products Section Styling */
+.featured-products {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+/* Categories Section Styling */
+.category-item img {
+    width: 180px;      /* Set fixed width */
+    height: 180px;     /* Set fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Featured Products Section Styling */
+.product img {
+    width: 220px;      /* Set fixed width */
+    height: 220px;     /* Set fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
