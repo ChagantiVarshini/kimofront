@@ -10,7 +10,7 @@ app.use(cors()); // Enable CORS
 app.use(express.json()); // Middleware to parse JSON requests
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/ecommerce', {
+mongoose.connect('mongodb+srv://varshinichaganti63:Munny1%40%40%40@ecom.0ftd2.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
