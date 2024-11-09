@@ -23,10 +23,8 @@ db.once('open', () => console.log('Connected to MongoDB'));
 app.use('/api/orders', orderRoutes); // All `/api/orders` requests will be handled by the routes in `orders.js`
 
 // Start the server
-app.listen(5001, () => {
-  console.log('Server is running on http://localhost:5001');
-});
-const port = process.env.PORT || 3000; // Default to 5000 for local development
+
+const port = process.env.PORT || 5001; // Default to 5000 for local development
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
