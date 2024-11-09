@@ -5,8 +5,14 @@ const orderRoutes = require('./routes/orders'); // Import the order routes
 
 const app = express();
 
+// Define the frontend URL
+const frontendUrl = 'http://localhost:3000';
+
 // Middleware setup
-app.use(cors()); // Enable CORS
+app.use(cors({
+  origin: frontendUrl,
+  credentials: true,
+}));
 app.use(express.json()); // Middleware to parse JSON requests
 
 // Connect to MongoDB
@@ -23,8 +29,7 @@ db.once('open', () => console.log('Connected to MongoDB'));
 app.use('/api/orders', orderRoutes); // All `/api/orders` requests will be handled by the routes in `orders.js`
 
 // Start the server
-
-const port = process.env.PORT || 5001; // Default to 5000 for local development
+const port = process.env.PORT || 5001;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
