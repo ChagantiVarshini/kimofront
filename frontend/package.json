@@ -8,9 +8,13 @@
     "axios": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
+  "start": "npm run start --workspace frontend",
+  "build": "npm run build --workspace frontend",
+  "test": "npm run test --workspace frontend",
+  "eject": "npm run eject --workspace frontend",
+  "predeploy": "npm run build --workspace frontend",
+  "deploy": "gh-pages -d frontend/build",
+  "backend": "cd backend && node server.js" 
+}
+
 }
