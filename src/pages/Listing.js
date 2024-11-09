@@ -126,12 +126,12 @@ const Listing = () => {
           <div className="category" id={categoryData.id}>
             <h3 className="category-title">{categoryData.name}</h3>
             <ul>
-              {categoryData.products.map((product) => (
-                <li key={product.id}>
-                  <img src={product.image} alt={product.name} />
-                  <h4>{product.name}</h4>
-                  <p>{product.price}</p>
-                  <button onClick={() => addToCart(product.id, 1)}>
+              {categoryData.products.map((products) => (
+                <li key={products.id}>
+                  <img src={products.image} alt={products.name} />
+                  <h4>{products.name}</h4>
+                  <p>{products.price}</p>
+                  <button onClick={() => addToCart(products.id, 1)}>
                     Add to Cart
                   </button> {/* Adjusted */}
                 </li>
